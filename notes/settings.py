@@ -2,6 +2,7 @@
 from pathlib import Path
 
 import django_heroku
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,13 +12,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-w-l83yk(xic*9h63---k8v!!ojgkq-=6+85j5s9*(^px01-d_6'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #comments
 DEBUG = False
 
-ALLOWED_HOSTS = ['myflutterdjango.herokuapp.com']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
