@@ -80,7 +80,7 @@ def updateNote(request, pk):
     return Response(serialized.data)
 
 
-#Delete a Note
+#Delete a Note when called 
 @api_view(['DELETE'])
 def deleteNote(request, pk):
     note = Note.objects.get(id=pk)
