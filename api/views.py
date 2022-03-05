@@ -36,7 +36,7 @@ def getRoutes(request):
         'Endpoint' : '/notes/id/delete',
         'method' :'DELETE',
         'body' : None, 
-        'description': 'Delete an exisitng Note'
+        'description': ' To Delete an exisitng Note'
     },
     
     
