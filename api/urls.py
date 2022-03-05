@@ -8,8 +8,8 @@ urlpatterns = [
    
     path('', getRoutes, name="getRoutes"),
     path('notes/', getNotes, name="getNotes"),
-    path('note/<int:pk>/', getNote, name="getNote"),
-    path('note/create/', createNote, name="=createNote"),
-    path('note/update/<int:pk>/', updateNote, name="=updateNote"),
-    path('note/delete/<int:pk>/', deleteNote, name="=deleteNote"),
+    path('notes/<int:pk>/', getNote, name="getNote"),
+    path('notes/create/', createNote, name="=createNote"),
+    path('notes/<int:pk>/update', updateNote, name="=updateNote"),
+    path('notes/<int:pk>/delete', deleteNote, name="=deleteNote"),
 ]
